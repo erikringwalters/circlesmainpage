@@ -1,13 +1,30 @@
-<<<<<<< HEAD
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+// $( document ).ready(function() {
+console.log( "ready!" );
+
+//     $(window).resize(function() {
+//   // This will execute whenever the window is resized
+//   var h = $(window).innerHeight(); // New height
+//   console.log("height: " + $(window).innerHeight)
+//   var w = $(window).innerWidth(); // New width
+//   console.log("width: " + $(window).innerWidth)
+// });
+var c=document.getElementById("faceCanvas");
+var ctx=c.getContext("2d");
+
 ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.stroke();
-=======
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.stroke();
->>>>>>> 51a61f3777f9532bbe5fc82ff3d3142573f3d691
+  ctx.arc(100, 100, 20, 0, 2 * Math.PI, false);
+  ctx.fillStyle = 'green';
+  ctx.fill();
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = '#003300';
+  ctx.stroke();
+
+// var radius = 70;
+// context.beginPath();
+// context.arc(200, 200, radius, 0, 2*Math.PI, false);
+// context.fillStyle = 'green';
+// context.fill();
+// context.lineWidth = 5;
+// context.strokeStyle = '#003300';
+// context.stroke();
+// });
